@@ -1,4 +1,4 @@
-# how to create template
+# how to create template and use it
 
 ## step1=> racine
 
