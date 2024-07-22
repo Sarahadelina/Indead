@@ -125,3 +125,18 @@ Execution :
 - npm run dev
 - test
   
+## create repo on github
+
+  ```bash
+git add .
+git commit -m"first commit"
+git remote add origin <lien ssh>
+git push -u origin main
+```
+
+## github repo du template
+
+1- aller dans le repo
+2- aller dans settings du repo
+3- sélectionner "Template repository"
+4- aller créer nouveau repo et choisir le template à utiliser => pour créer le nouveau projet
