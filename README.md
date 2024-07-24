@@ -48,10 +48,10 @@ npm install npm-run-all --save-dev
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm-run-all --parallel dev:client dev:backend",
+    "dev": "npm-run-all --parallel dev:client dev:server",
     "dev:client": "npm --prefix ./client run dev",
-    "dev:backend": "npm --prefix ./backend run dev:backend",
-    "setup": "npm i && npm --prefix ./client i && npm --prefix ./backend i"
+    "dev:server": "npm --prefix ./server run dev:server",
+    "setup": "npm i && npm --prefix ./client i && npm --prefix ./server i"
   },
   "author": "",
   "license": "ISC",
@@ -68,12 +68,12 @@ npm install npm-run-all --save-dev
 
   ```json
 {
-  "name": "backend",
+  "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:backend": "nodemon index.js"
+    "dev:server": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
